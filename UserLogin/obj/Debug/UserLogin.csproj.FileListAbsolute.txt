@@ -1,0 +1,8 @@
+D:\proekti\pops\PS_49_AA\UserLogin\bin\Debug\UserLogin.exe.config
+D:\proekti\pops\PS_49_AA\UserLogin\bin\Debug\UserLogin.exe
+D:\proekti\pops\PS_49_AA\UserLogin\bin\Debug\UserLogin.pdb
+D:\proekti\pops\PS_49_AA\UserLogin\obj\Debug\UserLogin.csprojAssemblyReference.cache
+D:\proekti\pops\PS_49_AA\UserLogin\obj\Debug\UserLogin.csproj.CoreCompileInputs.cache
+D:\proekti\pops\PS_49_AA\UserLogin\obj\Debug\UserLogin.exe
+D:\proekti\pops\PS_49_AA\UserLogin\obj\Debug\UserLogin.pdb
+D:\proekti\pops\PS_49_AA\UserLogin\bin\Debug\test.txt

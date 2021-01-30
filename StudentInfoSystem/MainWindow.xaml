@@ -1,0 +1,53 @@
+﻿<Window x:Class="StudentInfoSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentInfoSystem"
+        mc:Ignorable="d"
+        Title="Student Information System" Height="450" Width="1416">
+    <Grid x:Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="groupInfo" Header="Personal Information" Grid.Column="1" HorizontalAlignment="Right" Height="150" VerticalAlignment="Top" Width="730" Margin="33,23,23,0">
+            <Grid x:Name="personalInfoGrid">
+                <Label x:Name="labelLastName" Content="Last Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,95,0,0" Height="23" Width="71"/>
+                <Label x:Name="labelSecondName" Content="Second Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,57,0,0"/>
+                <Label x:Name="labelFirstName" Content="Name:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,18,0,0"/>
+                <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Margin="110,18,0,0"/>
+                <TextBox x:Name="txtSecondName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Margin="110,57,0,0"/>
+                <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Margin="110,95,0,0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupStudentInfo" Header="Student Information" Grid.Column="1" HorizontalAlignment="Right" Height="225" VerticalAlignment="Top" Width="730" Margin="33,184,23,0">
+            <Grid x:Name="studentInfoGrid">
+                <Label x:Name="labelFacNum" Content="Fac. Number:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,18,0,0"/>
+                <Label x:Name="labelStatus" Content="Status:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,57,0,0"/>
+                <Label x:Name="labelOKS" Content="ECD:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,95,0,0"/>
+                <Label x:Name="labelFac" Content="Faculty:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,134,0,0"/>
+                <Label x:Name="labelSpec" Content="Speciality:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="18,173,0,0"/>
+                <Label x:Name="labelGroup" Content="Group:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="519,95,0,0"/>
+                <Label x:Name="labelStream" Content="Stream:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="521,57,0,0"/>
+                <Label x:Name="labelCourse" Content="Course:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="521,18,0,0"/>
+                <TextBox x:Name="txtFac" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="333" Margin="110,134,0,0"/>
+                <TextBox x:Name="txtSpec" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="333" Margin="110,173,0,0"/>
+                <TextBox x:Name="txtOKS" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="333" Margin="110,95,0,0"/>
+                <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="333" Margin="110,57,0,0"/>
+                <TextBox x:Name="txtFacNum" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="333" Margin="110,18,0,0"/>
+                <TextBox x:Name="txtCourse" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="586,18,0,0"/>
+                <TextBox x:Name="txtStream" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="586,57,0,0"/>
+                <TextBox x:Name="txtGroup" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="586,95,0,0"/>
+            </Grid>
+        </GroupBox>
+        <Button x:Name="buttonClear" Content="Clear" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Margin="433,85,150,0" Click="ButtonClear_Click"/>
+        <Button x:Name="buttonActivate" Content="Activate" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Margin="678,46,50,0" Click="ButtonActivate_Click"/>
+        <Button x:Name="buttonSearch" Grid.Column="1" Content="Search" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Margin="433,123,150,0" Click="ButtonSearch_Click"/>
+        <GroupBox x:Name="photoGroupBox" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="131" Height="170" Header="Photo">
+            <Grid>
+                <Image x:Name="photoBox" Margin="5,5,5,5" Source="nophoto.png"></Image>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

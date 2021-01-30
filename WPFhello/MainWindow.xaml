@@ -1,0 +1,48 @@
+﻿<Window x:Class="WPFhello.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFhello"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="705.1" Width="592.5" Closing="Window_Closing">
+    <Grid Margin="0,0,2,0">
+        <Label x:Name="proz1" Content="Hello, WPF!" HorizontalAlignment="Left" Margin="29,565,0,0" VerticalAlignment="Top" Height="66" Width="297" FontFamily="Arial" FontSize="50"/>
+        <Button x:Name="btnHello" Content="Hello!" Margin="427,68,0,0" VerticalAlignment="Top" Width="98" Height="40" ScrollViewer.CanContentScroll="True" HorizontalAlignment="Left" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="BtnHello_Click"/>
+        <GroupBox x:Name="gbUser" Header="User" HorizontalAlignment="Left" Height="209" Margin="25,27,0,0" VerticalAlignment="Top" Width="530">
+            <Grid x:Name="NameGrid" HorizontalAlignment="Left" Height="210" VerticalAlignment="Top" Width="520" Margin="0,-11,-2,-12">
+                <Label x:Name="labelName1" Content="Name1:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,82,0,0" Height="23"/>
+                <Label x:Name="labelName2" Content="Name2:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,128,0,0"/>
+                <TextBox x:Name="txtName1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="291" Margin="67,85,0,0"/>
+                <TextBox x:Name="txtName2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="291" Margin="67,131,0,0"/>
+                <Label x:Name="labelName3" Content="Name3:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,174,0,0"/>
+                <TextBox x:Name="txtName3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="291" Margin="67,177,0,0"/>
+            </Grid>
+        </GroupBox>
+        <Label x:Name="labelName" Content="Name:" HorizontalAlignment="Left" Margin="49,68,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="23" Margin="98,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="291"/>
+        <GroupBox x:Name="grFact" Header="Factorial n!" HorizontalAlignment="Left" Height="100" Margin="29,336,0,0" VerticalAlignment="Top" Width="530"/>
+        <Label x:Name="lblFact" Content="Enter n:" HorizontalAlignment="Left" Margin="47,382,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFact" HorizontalAlignment="Left" Height="22" Margin="103,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+        <Button x:Name="calcFact" Content="Calculate" HorizontalAlignment="Left" Margin="443,388,0,0" VerticalAlignment="Top" Width="74" Click="CalcFact_Click"/>
+        <Label x:Name="lblFactResult" Content="n! =" HorizontalAlignment="Left" Margin="237,382,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFactResult" HorizontalAlignment="Left" Height="22" Margin="269,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <GroupBox x:Name="grPowerof" Header="a^b" HorizontalAlignment="Left" Height="100" Margin="29,449,0,0" VerticalAlignment="Top" Width="530">
+            <TextBox x:Name="txtAB" HorizontalAlignment="Left" Height="23" Margin="147,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        </GroupBox>
+        <Label x:Name="lblA" Content="a=" HorizontalAlignment="Left" Margin="59,470,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblB" Content="b=" HorizontalAlignment="Left" Margin="230,470,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtA" HorizontalAlignment="Left" Height="23" Margin="83,473,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtB" HorizontalAlignment="Left" Height="23" Margin="255,473,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblAB" Content="a^b=" HorizontalAlignment="Left" Margin="139,510,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="calcAB" Content="Calculate" HorizontalAlignment="Left" Margin="442,495,0,0" VerticalAlignment="Top" Width="75" Click="CalcAB_Click"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Hellooo" VerticalAlignment="Top" FontSize="72" Margin="139,241,0,0"/>
+        <Grid HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="244" Margin="315,564,0,0">
+            <TextBlock HorizontalAlignment=" Center" VerticalAlignment="Center" FontFamily="Arial Black">I edit it!!1</TextBlock>
+            <Button HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Height="30" Click="Button_Click">
+                Click me
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>

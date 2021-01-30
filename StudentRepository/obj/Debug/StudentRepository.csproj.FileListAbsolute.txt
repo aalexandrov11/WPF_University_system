@@ -1,0 +1,12 @@
+D:\proekti\pops\PS_49_AA\StudentRepository\bin\Debug\test.txt
+D:\proekti\pops\PS_49_AA\StudentRepository\bin\Debug\StudentRepository.exe.config
+D:\proekti\pops\PS_49_AA\StudentRepository\bin\Debug\StudentRepository.exe
+D:\proekti\pops\PS_49_AA\StudentRepository\bin\Debug\StudentRepository.pdb
+D:\proekti\pops\PS_49_AA\StudentRepository\bin\Debug\UserLogin.exe
+D:\proekti\pops\PS_49_AA\StudentRepository\bin\Debug\UserLogin.pdb
+D:\proekti\pops\PS_49_AA\StudentRepository\bin\Debug\UserLogin.exe.config
+D:\proekti\pops\PS_49_AA\StudentRepository\obj\Debug\StudentRepository.csprojAssemblyReference.cache
+D:\proekti\pops\PS_49_AA\StudentRepository\obj\Debug\StudentRepository.csproj.CoreCompileInputs.cache
+D:\proekti\pops\PS_49_AA\StudentRepository\obj\Debug\StudentRepository.csproj.CopyComplete
+D:\proekti\pops\PS_49_AA\StudentRepository\obj\Debug\StudentRepository.exe
+D:\proekti\pops\PS_49_AA\StudentRepository\obj\Debug\StudentRepository.pdb

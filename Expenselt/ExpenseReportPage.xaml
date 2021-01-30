@@ -1,0 +1,95 @@
+﻿<Page x:Class="Expenselt.ExpenseReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Expenselt"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Expenselt - View Expense">
+
+    <!--<Grid Margin="10,0,10,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>-->
+        <Grid Margin="10,0,10,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="watermark.jpeg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <!--<Label Grid.Row="0">Name:</Label>
+            <Label Content="{Binding XPath=@Name}"></Label>
+            <Label Grid.Row="1">Department:</Label>
+            <Label Content="{Binding XPath=@Department}"></Label>-->
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" HorizontalAlignment="Left" FontWeight="Bold">Name:</Label>
+                <Label Grid.Column="1" HorizontalAlignment="Left" Content="{Binding XPath=@Name}"></Label>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" HorizontalAlignment="Left" FontWeight="Bold">Department:</Label>
+                <Label Grid.Column="1" HorizontalAlignment="Left" Content="{Binding XPath=@Department}"></Label>
+            </Grid>
+            <Label Grid.Row="0" HorizontalAlignment="Center" Foreground="RoyalBlue" FontSize="17" FontWeight="Bold">Expense Report For:</Label>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Border x:Name="ExpenseType" Height="35" Padding="5" Background="RoyalBlue" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0">
+                    <Label Foreground="White" Style="{StaticResource listHeaderTextStyle}" HorizontalAlignment="Center">Expence type</Label>
+                </Border>
+                <Border x:Name="ExpenseAmount" Height="35" Padding="5" Background="RoyalBlue" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0">
+                    <Label Foreground="White" Style="{StaticResource listHeaderTextStyle}" HorizontalAlignment="Center">Amount</Label>
+                </Border>
+                <DataGrid Grid.Column="0" Grid.Row="1" ItemsSource="{Binding XPath=Expense}" AutoGenerateColumns="False" HeadersVisibility="None" RowHeaderWidth="0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="*" Binding="{Binding XPath=@ExpenseType}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+                <DataGrid Grid.Column="1" Grid.Row="1" ItemsSource="{Binding XPath=Expense}" AutoGenerateColumns="False" HeadersVisibility="None" RowHeaderWidth="0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Width="*" Binding="{Binding XPath=@ExpenseAmount}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+            
+        </Grid>
+
+    </Grid>
+    
+</Page>

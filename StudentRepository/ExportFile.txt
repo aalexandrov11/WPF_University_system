@@ -1,0 +1,4 @@
+Iliq Iliev
+FacNum: 141516171
+Course: 3, stream: 8, group: 40
+Last taken course: 2
